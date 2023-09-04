@@ -13,6 +13,6 @@ function callMeMoby(x, theFunction) {
 module.exports.callMeMoby = callMeMoby;
 
 
-callMeMoby(4, function () {
-  console.log('C is fun');
-});
+// callMeMoby(4, function () {
+//   console.log('C is fun');
+// });
