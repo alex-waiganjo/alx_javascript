@@ -1,6 +1,7 @@
 #!/usr/bin/node
-class Rectangle {}
-const r1 = new Rectangle();
+// 0-rectangle.js
+class Rectangle {
+}
 
-console.log(r1);
-console.log(Rectangle);
+module.exports = Rectangle;
+
