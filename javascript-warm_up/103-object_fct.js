@@ -7,9 +7,10 @@ const myObject = {
 console.log(myObject);
 
 // Adding incr func to myObject
-myObject.incr = function () {
+function incr() {
   this.value++;
 };
+myObject.incr =incr
 
 // Output
 myObject.incr();
