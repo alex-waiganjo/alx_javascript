@@ -6,7 +6,7 @@ class Rectangle {
       this.height = height;
     }
   }
-if ((Rectangle.width && Rectangle.height ==0 )& (Rectangle.width && Rectangle.height<0)){
+if ((Rectangle.width && Rectangle.height ==0 ) || (Rectangle.width && Rectangle.height<0)){
 Rectangle = {}
 }
 
