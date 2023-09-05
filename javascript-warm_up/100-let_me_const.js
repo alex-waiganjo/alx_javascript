@@ -1,4 +1,6 @@
 #!/usr/bin/node
-const myVar = 333
-module.exports = myVar
+let myVar = 89;
+console.log(myVar);
+myVar = 333;
+console.log(myVar);
 
