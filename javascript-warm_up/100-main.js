@@ -1,3 +1,3 @@
 #!/usr/bin/node
-myVar = require('./100-let_me_const');
+const myVar = require('./100-let_me_const');
 console.log(myVar);
