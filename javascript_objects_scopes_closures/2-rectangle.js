@@ -3,7 +3,7 @@
 class Rectangle {
     constructor(width, height) {
         if (width<=0 || height<=0){
-            return {}
+            return typeof(Rectangle)
         }
     
       this.width = width;
