@@ -10,7 +10,7 @@ class Rectangle {
       this.height = height;
     }
   }
-if (Rectangle.width ||Rectangle.height<=0){
+if (Rectangle.width<=0 ||Rectangle.height<=0){
 Rectangle = {}
 }
 
