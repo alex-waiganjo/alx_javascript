@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
 // function to add two integers
-function add(num1, num2) {
+exports.add =function add(num1, num2) {
   return num1 + num2;
 }
-// console.log(add())
