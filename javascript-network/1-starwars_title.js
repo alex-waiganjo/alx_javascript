@@ -1,9 +1,12 @@
 #!/usr/bin/node
 
 const req = require('request');
-// Input
+// Input ID
 const id = process.argv[2];
-req.get(`https://swapi-api.alx-tools.com/api/films/${id}`,function(error,response,body){
-}).forEach(element => {
-    console.log(element.title)
-  });
+req.get(
+  `https://swapi-api.alx-tools.com/api/films/${id}`,
+  function (error, response, body) {
+    const obj = JSON.parse(body);
+    console.log(obj['title']);
+  },
+);
