@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating and Removing Elements</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <button id="btn" onclick="del()">click me</button>
+    <script>
+      const div = document.getElementById('container');
+
+      const p = document.createElement('p');
+      p.textContent = 'New paragragh';
+      div.appendChild(p);
+
+      const btn = document.getElementById('btn');
+      let mode = false;
+
+      btn.addEventListener('click', () => {
+        if (mode) {
+          p.style.display = 'block';
+          mode = false;
+        } else {
+          p.style.display = 'none';
+          mode = true;
+        }
+      });
+    </script>
+  </body>
+</html>
